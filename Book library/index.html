@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Book Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgb(2, 151, 210);
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: skyblue;
+            padding: 10px;
+        }
+        nav input, nav select {
+            margin: 0 10px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        #content {
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        form input, form button {
+            margin: 0 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .book {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .book h3 {
+            margin: 0;
+        }
+        .book p {
+            margin: 5px 0;
+        }
+        .book button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .history {
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .history h4 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Library</h1>
+    </header>
+    <nav>
+        <input type="text" id="search" placeholder="Search books...">
+        <select id="categories">
+            <option value="">All Categories</option>
+        </select>
+    </nav>
+    <div id="content">
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Book Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="book-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
