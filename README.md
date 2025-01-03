@@ -5,8 +5,11 @@ This repository contains four web applications that I built during my internship
 
 The projects are as follows:
   **Age Calculator**: An app to calculate your age based on your date of birth.
+  
   **Book Library**: A simple app for managing a collection of books, allowing users to add, delete, and view books.
+  
   **To-Do App**: A task manager app for keeping track of daily tasks, allowing users to add, mark as complete, and remove tasks.
+  
   **Weather Forecast App**: An app that shows the weather forecast by fetching data from an API based on the user's location.
 
 ## Projects Overview
